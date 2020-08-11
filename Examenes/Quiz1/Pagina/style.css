@@ -1,0 +1,13 @@
+body { background-image: linear-gradient(to bottom right, rgb(41, 126, 201), yellow);color:black; font-family: "Courier New"; }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  header {text-align: center
+  }
+  footer {text-align: center
+  }
+
+
