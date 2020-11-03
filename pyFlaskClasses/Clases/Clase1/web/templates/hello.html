@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> App | Hello</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/hello.css')}}">
 </head>
 <body>
-    <h1> style = "color: darkslateblue; " bienvenido a mi primera pagina</h1>
+    <h1> bienvenido a mi primera pagina</h1>
     <h2>Tu ip es : {{userIp}}</h2>
     <h2>Tu mascota es: {{mascota}} </h2>
+    <img src="{{url_for('static', filename = 'images/logo.png')}}">
+    <a href="/personas">Ir a Personas</a>
+    <a href="/cosas">Ir a Cosas</a>
 </body>
 </html>
