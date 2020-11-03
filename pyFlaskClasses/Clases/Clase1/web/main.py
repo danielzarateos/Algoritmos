@@ -10,42 +10,20 @@ def home():
     return(response)
 
 #    return f"Hola, tu ip es {user_ip}"
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html')
 @app.route('/hello')
 def helloRoute():
     perro = request.cookies.get('perro')
     ip = request.cookies.get('ip')
     return render_template('hello.html', mascota = perro, userIp = ip)
-@app.route('/hey')
-def heyRoute():
-    return render_template('hey.html')
-
-
-if __name__ == '__main__':
-    app.run()
-
-from flask import Flask, request, make_response, redirect, render_template
-
-# se crea un objeto del tipo app
-app = Flask(__name__)
-
-@app.route('/')
-def homeRoute():
-    user_ip = request.remote_addr
-    response = make_response(redirect('hello'))
-    response.set_cookie('ip',user_ip)
-    response.set_cookie('gato','Lior Herrera')
-    return render_template('home.html')
-
-@app.route('/hello')
-def helloRoute():
-    gato = request.cookies.get('gato')
-    ip = request.cookies.get('ip')
-    return render_template('hello.html', 
-    mascota = gato, userIp = ip)
-@app.route('/hey')
-def heyRoute():
-    return render_template('hey.html')
-
+@app.route('/cosas')
+def cosasRoute():
+    return render_template('cosas.html')
+@app.route('/personas')
+def personasRoute():
+    return render_template('personas.html')
 
 
 if __name__ == '__main__':
