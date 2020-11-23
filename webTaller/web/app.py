@@ -17,10 +17,12 @@ def servicesRoute():
 @app.route('/doctors')
 def doctorsRoute():
     return render_template('doctors.html')
-@app.route('/doctors')
+@app.route('/abaout')
 def abaoutRoute():
     return render_template('abaout.html')
-
+@app.route('/contact')
+def contactRoute():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run()
