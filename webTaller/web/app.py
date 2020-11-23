@@ -21,9 +21,9 @@ def helloRoute():
     ip = request.cookies.get('ip')
     return render_template('hello.html', 
     mascota = gato, userIp = ip)
-@app.route('/hey')
+@app.route('/doctors')
 def heyRoute():
-    return render_template('hey.html')
+    return render_template('doctors.html')
 
 
 
