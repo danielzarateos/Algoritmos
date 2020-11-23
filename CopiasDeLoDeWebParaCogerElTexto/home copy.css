@@ -1,0 +1,19 @@
+body {
+    font-family: "Open sans", sans-serif;
+    color: #115c9b;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Dosis", sans-serif;
+  }
+
+img{
+    height: 500px;
+    width: 400px;
+}
