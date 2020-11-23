@@ -1,3 +1,12 @@
-h2{
-    color: steelblue;
-}
+body {
+    font-family: "Open sans", sans-serif;
+    color: #115c9b;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Dosis", sans-serif;
+  }
+  
